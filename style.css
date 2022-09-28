@@ -1,0 +1,624 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 480px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    background-color: rgb(43, 171, 245);
+}
+
+
+
+/* main {
+    position: relative;
+} */
+
+.logo img {
+    width: 2.4em;
+}
+
+.mobileMenu {
+    display:block;
+    font-size: 1rem;
+}
+
+/* .headerNav{
+    display: none;
+} */
+
+.menuList {
+    /* display: none; */
+    width: 100%;
+    height: calc(100vh - 80px);
+    z-index: 9;
+    background-color: #fff; 
+    opacity: 1;
+    position: fixed;
+    top: 110px;
+    right: -100%;
+    transition: 1s linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cartDetails {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+     /* visibility: hidden; */
+    position: fixed;
+    z-index: 9;
+    background-color: #fff;
+    transition: 1s linear; 
+    opacity: 1;
+    top: -100%;
+    width: 480px;
+    /* height: calc(100vh - 80px); */
+}
+
+#itemContainer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.howMany {
+    width: 3.4rem;
+    border: none;
+}
+
+.delBtn {
+    width: 4rem;
+    height: 2rem;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    background-color: red;
+    font-size: 1rem;
+    
+    cursor: pointer;
+}
+
+#checkBtn {
+    width: 14rem;
+    height: 2.7rem;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    background-color: rgb(47, 255, 64);
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top:1.2rem;
+    margin-left: 7rem;
+}
+
+.totalPee {
+    display: flex;
+    justify-content: space-around;
+}
+.headn {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0;
+    gap: 2em;
+}
+.newCla {
+    color: red;
+    /* position: relative; */
+    background-color: #fff;
+    justify-content: space-around;
+}
+
+/* #itemContainer {
+    display: none;
+} */
+.cartDetails.active {
+    top: 0;
+}
+
+nav li{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    padding-right: 12px;
+    padding-top: 2em;
+    color: black;
+}
+
+.menuList.active {
+    right: 0;
+}
+
+.heroDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heroText {
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+.heroDiv img {
+    width: 20em;
+    height: 20em;
+    border-radius: 50%;
+    margin-top: 1rem ;
+    margin-bottom: 1rem;
+    /* margin-right: 1rem;
+    margin-left: 3rem; */
+}
+
+.stockArea h2 {
+    text-align: center;
+}
+
+.stockArea h3 {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.maleDivGrid, .femaleDivGrid {
+    /* background-color: blue; */
+    margin-left: 0.2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.itemCard {
+    box-shadow: 2px 3px 4px black;
+    width: 14.5rem;
+    height: 20rem;
+    margin: 1px;
+    text-align: center;
+}
+
+.itemCard:hover {
+    transition: ease-in-out 1s;
+    transform: scale(1.02);
+}
+
+.itemCard button {
+    width: 11rem;
+    height: 2rem;
+    border-radius: 12px;
+    border: none;
+    color: #fff;
+    background-color: tomato;
+    font-size: 1rem;
+    margin-top: 1.4em;
+    cursor: pointer;
+}
+
+.itemCard button:hover {
+    background-color: rgb(23, 235, 23);
+}
+
+.itemCard img {
+    max-width: 100%;
+    /* max-height: 90%; */
+}
+
+.itemName, .itemPrice {
+    padding-top: 0.5em;
+    font-size: 1.2em;
+}
+
+.reviewGrid, .contactArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviewCard {
+    width: 21rem;
+    box-shadow: 2px 3px 4px black;
+    text-align: center;
+}
+
+.reviewCard img {
+    margin-top: 2rem;
+    max-width: 100%;
+    /* max-height: 90%; */
+    border-radius: 50%;
+    width: 9em;
+    height: 8em;
+}
+
+.reviewCard p {
+    padding: 2rem;
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+.reviewCard h5 {
+    font-size: 1.4rem;
+}
+
+#review h3, #contact h3{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.contactArea {
+    padding: 2rem;
+}
+
+.offices p {
+    font-size: 1.1em;
+    font-weight:600;
+}
+
+.socialMedia a {
+    font-size: 2.7rem;
+    margin-left: .3em;
+}
+
+.mailUs h5 {
+    font-size: 1.2em;
+}
+
+input {
+    margin-top: 0.7rem;
+    height: 1.7rem;
+    width: 15rem;
+}
+
+input::placeholder {
+    padding-left: 10px;
+}
+
+textarea {
+    margin-top: 0.7rem;
+}
+
+textarea::placeholder {
+    padding-left: 10px;
+}
+
+.mailUs button {
+    width: 7em;
+    height: 2em;
+    /* border-radius: 10px; */
+    border: none;
+    cursor: pointer;
+}
+
+#contact {
+    background-color: rgb(43, 171, 245) ;
+}
+
+textarea {
+    width: 320px;
+}
+
+.mailUs{
+    padding-left: 2rem;
+}
+
+footer {
+    display: flex;
+    background-color: rgb(8, 8, 48);
+    padding: .2rem;
+    color: #fff;
+    font-size: 0.7em;
+    justify-content: space-between;
+}
+
+
+/*mobile*/
+
+
+@media only screen and (min-width: 481px) {
+    body {
+        width: 760px;
+    }
+    
+    .mobileMenu {
+        display:block;
+        font-size: 1rem;
+    }
+
+    .menuList {
+        display: none;
+        width: 100%;
+        height: calc(100vh - 80px);
+        z-index: 9;
+        background-color: #fff;
+        opacity: 0.9;
+        position: fixed;
+        top: 110px;
+        right: -100%;
+        transition: 1s linear;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menuList.active {
+        right: 0;
+    }
+
+    /* .headerNav{
+        display: none;
+    } */
+
+    .heroDiv {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* align-items: center; */
+    }
+
+    .heroText {
+        padding: 7rem;
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+    
+    .heroDiv img {
+        width: 20em;
+        height: 20em;
+        border-radius: 50%;
+        margin-top: 2rem ;
+        margin-bottom: 2rem;
+        margin-right: 1rem;
+        margin-left: 3rem;
+    }
+
+    .maleDivGrid, .femaleDivGrid {
+        /* background-color: blue; */
+        margin-left: 0.2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .itemCard {
+        box-shadow: 2px 3px 4px black;
+        width: 14.5rem;
+        height: 20rem;
+        margin: 1px;
+        text-align: center;
+    }
+
+    .reviewGrid, .contactArea {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    textarea {
+        width: 320px;
+    }
+
+    .mailUs{
+        padding-left: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+        width: 1024px;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 2em;
+        background-color: rgb(43, 171, 245);
+    }
+    
+    /* .cartDetails {
+        display: flex;
+        justify-content: space-around; 
+         visibility: hidden;
+        position: relative; 
+    } */
+
+    
+    
+    /* main {
+        position: relative;
+    } */
+    
+    .logo img {
+        width: 2.4em;
+    }
+
+    .menuList {
+        display: inline-block;
+        width: 70%;
+        height: 0;
+        z-index: 9;
+        opacity: 0.9;
+        position: relative;
+        top: 0;
+        left:0;
+        transition: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    .headerNav{
+        display: inline-block;
+    }
+    
+    nav li{
+        list-style-type: none;
+        display: inline-block;
+        font-size: 1.3rem;
+        padding-right: 12px;
+        padding-top: 6px;
+        color: black;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    a:hover {
+        transition: ease-in-out 7s linear;
+        text-decoration: underline solid tomato 2px;
+        color: #fff;
+        transform: scale(1.01);
+    }
+    
+    .cart {
+        font-size: 2rem;
+    }
+    
+    .cart:hover {
+        transition: ease-in-out linear 3s;
+        color: #fff;
+        transform: scaleX(1.00);
+        cursor: pointer;
+    }
+    
+    .mobileMenu {
+        display: none;
+    }
+    
+    .heroDiv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* background-color: rgb(172, 214, 238); */
+    }
+    
+    .heroText {
+        padding: 10rem 3rem;
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+    
+    .heroText p::first-letter{
+        font-size: 39px;
+    }
+    
+    .heroDiv img {
+        width: 20em;
+        height: 20em;
+        border-radius: 50%;
+        margin-top: 4rem ;
+        margin-right: 1rem;
+        margin-left: 3rem;
+    }
+    
+    .itemCard {
+        box-shadow: 2px 3px 4px black;
+        width: 15.5rem;
+        height: 20rem;
+        margin: 1px;
+        text-align: center;
+    }
+    
+    .itemCard:hover {
+        transition: ease-in-out 1s;
+        transform: scale(1.02);
+    }
+    
+    .itemCard button {
+        width: 11rem;
+        height: 2rem;
+        border-radius: 12px;
+        border: none;
+        color: #fff;
+        background-color: tomato;
+        font-size: 1rem;
+        margin-top: 1.4em;
+        cursor: pointer;
+    }
+    
+    .itemCard button:hover {
+        background-color: rgb(23, 235, 23);
+    }
+    
+    .itemCard img {
+        max-width: 100%;
+        /* max-height: 90%; */
+    }
+    
+    .maleDivGrid, .femaleDivGrid {
+        /* background-color: blue; */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+    .reviewGrid, .contactArea {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .contactArea {
+        padding: 2rem;
+    }
+    
+    .offices p {
+        font-size: 1.1em;
+        font-weight:600;
+    }
+    
+    .socialMedia a {
+        font-size: 2.7rem;
+        margin-left: .3em;
+    }
+    
+    .mailUs h5 {
+        font-size: 1.2em;
+    }
+    
+    input {
+        margin-top: 0.7rem;
+        height: 1.7rem;
+        width: 15rem;
+    }
+    
+    input::placeholder {
+        padding-left: 10px;
+    }
+    
+    textarea {
+        margin-top: 0.7rem;
+    }
+    
+    textarea::placeholder {
+        padding-left: 10px;
+    }
+    
+    .mailUs button {
+        width: 7em;
+        height: 2em;
+        /* border-radius: 10px; */
+        border: none;
+        cursor: pointer;
+    }
+    
+    #contact {
+        background-color: rgb(43, 171, 245) ;
+    }
+    
+}

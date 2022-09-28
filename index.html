@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoeExpress</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="./logo.png.png" alt="logo"></div>
+        <div class="menuList">
+            <nav>
+                <ul>
+                    <li id="home"><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#stock">Stock</a></li>
+                    <li><a href="#review">Review</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="cart"><i class='bx bxs-cart-alt'></i></div>
+        <div class="mobileMenu"><i class='bx bx-menu-alt-right menumenu'></i></div>
+    </header>
+    <div class="carted">
+        <div class="cartDetails">
+            <div class="headn">
+                <h5>ITEM NAME</h5>
+                <h5>QUANTITY</h5>
+                <h5>PRICE</h5>
+                <h5>DELETE</h5>
+                <button class="closeCart">X</button>
+                <!-- <div>ITEM NAME</div>
+                <div>QUANTITY</div>
+                <div>PRICE</div> -->
+            </div>
+            <div id="itemContainer">
+                <p class="emptyCart">Kindly Make your order</p>
+            </div>
+            <div class="totalDiv">
+                <hr>
+                <div class="totalPee"><h5>Total</h5> <div id="totalPriz">$0.00</div></div>
+                <button id="checkBtn">CHECKOUT</button>
+            </div>
+        </div>
+        
+    </div>
+    <main>
+        <div class="heroDiv">
+            <div class="heroText" id="about">
+                <h3>ABOUT US</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam temporibus ipsa necessitatibus doloremque porro odit nulla vero, modi facilis ullam impedit deleniti odio cum aperiam! Doloremque nulla recusandae nobis asperiores.</p> 
+            </div>
+            <div><img src="./hero/heropix.jpg" alt=""></div>
+        </div>
+        <div class="stockArea" id="stock">
+            <h2>OUR STOCK</h2>
+            <div class="maleDiv">
+                <h3>MALE SHOES</h3>
+                <div class="maleDivGrid">
+                    <div class="itemCard">
+                        <img src="./Men/pexels-web-donut-19090.casual.jpg" alt="" >
+                        <h5 class="itemName">#ITEM1</h5>
+                        <h5 class="itemPrice">$70</h5>
+                        <button id="cartBtn">Add To Cart<i class='bx bxs-cart-add'></i></button>
+                    </div>
+                    <div class="itemCard">
+                        <img src="./Men/gettyimages-1359097757-612x612.man.jpg" alt="">
+                        <h5 class="itemName">#ITEM2</h5>
+                        <h5 class="itemPrice">$10</h5>
+                        <button id="cartBtn">Add To Cart<i class='bx bxs-cart-add'></i></button>
+                    </div><div class="itemCard">
+                        <img src="./Men/gettyimages-1317348003-612x612.man.jpg" alt="">
+                        <h5 class="itemName">#ITEM22</h5>
+                        <h5 class="itemPrice">$120</h5>
+                        <button id="cartBtn">Add To Cart<i class='bx bxs-cart-add'></i></button>
+                    </div><div class="itemCard">
+                        <img src="./Men/gettyimages-1359097757-612x612.man.jpg" alt="">
+                        <h5 class="itemName">#ITEM222</h5>
+                        <h5 class="itemPrice">$20</h5>
+                        <button id="cartBtn">Add To Cart<i class='bx bxs-cart-add'></i></button>
+                    </div><div class="itemCard">
+                        <img src="./Men/pexels-photo-637076.casual.jpeg" alt="">
+                        <h5 class="itemName">#ITEM12</h5>
+                        <h5 class="itemPrice">$430</h5>
+                        <button id="cartBtn">Add To Cart<i class='bx bxs-cart-add'></i></button>
+                    </div><div class="itemCard">
+                        <img src="./Men/pexels-photo-11926130.cpMan.jpeg" alt="">
+                        <h5 class="itemName">#ITEM11</h5>
+                        <h5 class="itemPrice">$90</h5>
+                        <button id="cartBtn">Add To Cart<i class='bx bxs-cart-add'></i></button>
+                    </div><div class="itemCard">
+                        <img src="./Men/gettyimages-1317348003-612x612.man.jpg" alt="">
+                        <h5 class="itemName">#ITEM112</h5>
+                        <h5 class="itemPrice">$91</h5>
+                        <button id="cartBtn">Add To Cart<i class='bx bxs-cart-add'></i></button>
+                    </div><div class="itemCard">
+                        <img src="./Men/pexels-photo-1580267.casual.jpeg" alt="">
+                        <h5 class="itemName">#ITEM43</h5>
+                        <h5 class="itemPrice">$32</h5>
+                        <button id="cartBtn">Add To Cart<i class='bx bxs-cart-add'></i></button>
+                    </div><div class="itemCard">
+                        <img src="./Men/gettyimages-1190399721-612x612.man.jpg" alt="">
+                        <h5 class="itemName">#ITEM123</h5>
+                        <h5 class="itemPrice">$89</h5>
+                        <button id="cartBtn">Add To Cart<i class='bx bxs-cart-add'></i></button>
+                    </div><div class="itemCard">
+                        <img src="./Men/pexels-photo-637076.casual.jpeg" alt="">
+                        <h5 class="itemName">#ITEM23</h5>
+                        <h5 class="itemPrice">$84</h5>
+                        <button id="cartBtn">Add To Cart<i class='bx bxs-cart-add'></i></button>
+                    </div><div class="itemCard">
+                        <img src="./Men/pexels-photo-1580267.casual.jpeg" alt="">
+                        <h5 class="itemName">#ITEM343</h5>
+                        <h5 class="itemPrice">$78</h5>
+                        <button id="cartBtn">Add To Cart<i class='bx bxs-cart-add'></i></button>
+                    </div><div class="itemCard">
+                        <img src="./Men/pexels-photo-1639729.casual.jpeg" alt="">
+                        <h5 class="itemName">#ITEM1231</h5>
+                        <h5 class="itemPrice">$74</h5>
+                        <button id="cartBtn">Add To Cart<i class='bx bxs-cart-add'></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="femaleDiv">
+                <h3>FEMALE SHOES</h3>
+                <div class="femaleDivGrid">
+                    <div class="itemCard">
+                        <img src="./shoe.ladies/gettyimages-1298386578-612x612.woman.jpg" alt="">
+                        <h5 class="itemName">ITEM134</h5>
+                        <h5 class="itemPrice">$90</h5>
+                        <button id="cartBtn">Add To Cart<i class='bx bxs-cart-add'></i></button>
+                    </div><div class="itemCard">
+                        <img src="./shoe.ladies/pexels-photo-1801279.women.jpeg" alt="">
+                        <h5 class="itemName">#ITEM432</h5>
+                        <h5 class="itemPrice">$80</h5>
+                        <button id="cartBtn">Add To Cart<i class='bx bxs-cart-add'></i></button>
+                    </div><div class="itemCard">
+                        <img src="./shoe.ladies/pexels-photo-2237456.women.jpeg" alt="">
+                        <h5 class="itemName">#ITEM132</h5>
+                        <h5 class="itemPrice">$81</h5>
+                        <button id="cartBtn">Add To Cart<i class='bx bxs-cart-add'></i></button>
+                    </div><div class="itemCard">
+                        <img src="./shoe.ladies/pexels-photo-2409028.women.jpeg" alt="">
+                        <h5 class="itemName">#ITEM242</h5>
+                        <h5 class="itemPrice">$14</h5>
+                        <button id="cartBtn">Add To Cart<i class='bx bxs-cart-add'></i></button>
+                    </div><div class="itemCard">
+                        <img src="./shoe.ladies/gettyimages-a0022-000071-612x612.woman.jpg" alt="">
+                        <h5 class="itemName">#ITEM12</h5>
+                        <h5 class="itemPrice">$44</h5>
+                        <button id="cartBtn">Add To Cart<i class='bx bxs-cart-add'></i></button>
+                    </div><div class="itemCard">
+                        <img src="./shoe.ladies/gettyimages-1298386578-612x612.woman.jpg" alt="">
+                        <h5 class="itemName">#ITEM432</h5>
+                        <h5 class="itemPrice">$42</h5>
+                        <button id="cartBtn">Add To Cart<i class='bx bxs-cart-add'></i></button>
+                    </div><div class="itemCard">
+                        <img src="./shoe.ladies/gettyimages-a0022-000071-612x612.woman.jpg" alt="">
+                        <h5 class="itemName">#ITEM4</h5>
+                        <h5 class="itemPrice">$12</h5>
+                        <button id="cartBtn">Add To Cart<i class='bx bxs-cart-add'></i></button>
+                    </div><div class="itemCard">
+                        <img src="./shoe.ladies/gettyimages-1025627712-612x612.woman.jpg" alt="">
+                        <h5 class="itemName">#ITEM13</h5>
+                        <h5 class="itemPrice">$13</h5>
+                        <button id="cartBtn">Add To Cart<i class='bx bxs-cart-add'></i></button>
+                    </div><div class="itemCard">
+                        <img src="./shoe.ladies/pexels-photo-3682292.women.jpeg" alt="">
+                        <h5 class="itemName">#ITEM1232</h5>
+                        <h5 class="itemPrice">$10</h5>
+                        <button id="cartBtn">Add To Cart<i class='bx bxs-cart-add'></i></button>
+                    </div><div class="itemCard">
+                        <img src="./shoe.ladies/pexels-photo-4046699.women.jpeg" alt="">
+                        <h5 class="itemName">#ITEM323</h5>
+                        <h5 class="itemPrice">$80</h5>
+                        <button id="cartBtn">Add To Cart<i class='bx bxs-cart-add'></i></button>
+                    </div><div class="itemCard">
+                        <img src="./shoe.ladies/gettyimages-a0022-000071-612x612.woman.jpg" alt="">
+                        <h5 class="itemName">#ITEM333</h5>
+                        <h5 class="itemPrice">$24</h5>
+                        <button id="cartBtn">Add To Cart<i class='bx bxs-cart-add'></i></button>
+                    </div><div class="itemCard">
+                        <img src="./shoe.ladies/gettyimages-1298386578-612x612.woman.jpg" alt="">
+                        <h5 class="itemName">#ITEM3432</h5>
+                        <h5 class="itemPrice">$87</h5>
+                        <button id="cartBtn">Add To Cart <i class='bx bxs-cart-add'></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rev" id="review">
+            <h3>REVIEW</h3>
+            <div class="reviewGrid">
+                <div class="reviewCard">
+                    <img src="./reviewPix/man1.jpg" alt="">
+                    <h5 id="customerName">John Doe</h5>
+                    <span>Star Rating</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque voluptates iste nemo voluptatibus error nesciunt dignissimos nobis, vel perferendis dolore enim architecto delectus aliquam, iusto quam aspernatur modi rerum excepturi?</p>
+                </div><div class="reviewCard">
+                    <img src="./reviewPix/woman.jpg" alt="">
+                    <h5 id="customerName">Rebecca Kroos</h5>
+                    <span>Star Rating</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque voluptates iste nemo voluptatibus error nesciunt dignissimos nobis, vel perferendis dolore enim architecto delectus aliquam, iusto quam aspernatur modi rerum excepturi?</p>
+                </div><div class="reviewCard">
+                    <img src="./reviewPix/man2.jpg" alt="">
+                    <h5 id="customerName">Van James</h5>
+                    <span>Star Rating</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque voluptates iste nemo voluptatibus error nesciunt dignissimos nobis, vel perferendis dolore enim architecto delectus aliquam, iusto quam aspernatur modi rerum excepturi?</p>
+                </div>
+            </div>
+        </div>
+        <div class="cont" id="contact">
+            <h3>CONTACT US</h3>
+            <div class="contactArea">
+                <div class="offices">
+                    <p>No 23, Aminu Kano Crescent, <br> Karishi, Abuja.</p>
+                    <br>
+                    <p>80, Moshood Abiola Way, <br> Ikeja, Lagos State.</p>
+                    <br>
+                    <p>Favour Plaza, behing Remzy Filling Station <br> Opp. Jamasil Pharmacy, Kwali <br> FCT, Nigeria.</p>
+                </div>
+                <div class="socialMedia">
+                    <a href=""><i class='bx bxl-instagram'></i></a>
+                    <a href=""><i class='bx bxl-linkedin-square'></i></a>
+                    <a href=""><i class='bx bxl-facebook-square'></i></a>
+                    <a href=""><i class='bx bxl-whatsapp-square'></i></a>
+                    <a href=""><i class='bx bxl-twitter'></i></a>
+                </div>
+                <div class="mailUs">
+                    <h5>Message Us</h5>
+                    <form action="">
+                        <input type="text" placeholder="Full Name">
+                        <input type="text" placeholder="Email Address">
+                        <textarea name="" id="" cols="40" rows="10" placeholder="Write your message here"></textarea>
+                        <button id="submitBtn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="copy">&copy; Copywright 2022 </div>
+        <div class="designer">Designed by Horwerty</div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
